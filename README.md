@@ -52,14 +52,18 @@ Bookings and feedback are stored securely in one place, making management easier
 3. JavaScript
 
 **Backend Technologies...............**
+
 1.PHP
 
 **Database......................**
+
 1.MySql
 
 **Server.....................**
+
 1.Browser
 
 **IDE/Code Editior.............**
+
 1.Visual studio 
 
