@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="tourism_destination.css">
+	<title>Destinations</title>
+	<style type="text/css">
+		.container .box .name-text input{
+			position: relative;
+			display: none;
+			background: transparent;
+			border: 1px solid #fff;
+			top: -20px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+			text-align: center;
+		}
+		.btn{
+			padding: 5px 40px;
+		}
+		.btn1{
+			margin: 0px -20px;
+			padding: 5px 40px;
+		}
+		.btn2{
+			padding: 5px 60px;
+		}
+		.btn3{
+			padding: 5px 37px;
+			margin: 0px -2px;
+		}
+		.btn4{
+			padding: 5px 50px;
+		}
+		.btn5{
+			padding: 5px 25px;
+		}
+		.container .box:hover .name-text input{
+			display: block;
+			top: -20px;
+		}
+		.container .box .name-text input:hover{
+			background-color: #fff;
+		    color: #000;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="heading">Poupular Destinations</h1>
+	<div class="main">
+        <ul>
+          <ul class="list">
+            <li class="logo"><a href="tourism_mainPage.html"><img src="https://png.pngtree.com/png-clipart/20220228/original/pngtree-pin-location-with-3d-earth-globe-png-image_7326089.png" alt="Logo" style="width:36px;height:36px"></a></li>
+            <div class="search">
+            
+	            <form method="POST" action="tourism_info.php">
+	              <input type="text" name="search_p" placeholder="Search..." size="50">
+	          
+	              <input type="image" name="submit_p" src="https://img.icons8.com/?size=100&id=W0xu6u7K9A0F&format=png&color=000000" width="22px" height="22px"  alt="Search image" style="margin-left: 35px;">
+	            </form>
+          	</div>
+          </ul>
+          <ul class="list2">
+            <li><a href="tourism_mainPage.html">Home</a></li>
+            <li class="active-menu"><a id="long" href="tourism_destination.html">Destination</a></li>
+            <li><a href="tourism_gallery.html">Gallery</a></li>
+			<li><a href="tourism_feedback.html">Feedback</a></li>
+			<li><a href="tourism_signin _index.html">Logout</a></li>
+          </ul>
+        </ul>
+    </div>
+	<div class="container">
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://s3.india.com/wp-content/uploads/2024/06/List-of-8-Famous-Beaches-Around-Goa.jpg?impolicy=Medium_Widthonly&w=350&h=263" alt="Goa Image" style="width: auto;height: 270px;">
+			</div>
+			<div class="name-text name-pading1 top1">
+				<h1>Goa</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="goa" class="btn1" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.onthegotours.com/repository/Kerala-Rice-Boat--India-Tours--On-The-Go-Tours-275601449151662.jpg" alt="kerala Image" style="width: auto;height: 270px;">
+			</div>
+			<div class="name-text name-pading2 top1">
+				<h1>Kerala</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="kerala" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://dynamic.tourtravelworld.com/package-images/photo-small/dir_52/1532696/385571.jpg" alt="mysore Image">
+			</div>
+			<div class="name-text name-pading3 top1">
+				<h1>Mysore</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="mysore" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/39/6f/ed/boat-trip-on-dal-lake.jpg?w=1200&h=900&s=1" alt="ladakh Image">
+			</div>
+			<div class="name-text name-pading4 top1">
+				<h1>Ladakh</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="ladakh" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.captureatrip.com/_next/image?url=https%3A%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FTourist_Places_In_India_0b2a035c0c.webp&w=3840&q=50" alt="agra Image">
+			</div>
+			<div class="name-text name-pading5 top2">
+				<h1>Agra</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="agra" class="btn5" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://i2.wp.com/skypropertiespatelnagar.com/wp-content/uploads/2021/07/India_Gate_in_New_Delhi_03-2016-scaled.jpg?fit=2048%2C2560&ssl=1" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading6 top2">
+				<h1>India Gate</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="india_gate" class="btn2" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.holidaymonk.com/wp-content/uploads/2024/07/Interesting-things-to-do-in-Hampi-1024x632.webp" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading7 top2">
+				<h1>Hampi</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="hampi" class="btn3" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_P4tDvjGw5TpT60aXtQ14n5c9iptP2i8Cw&s" alt="Rajasthan Image">
+			</div>
+			<div class="name-text name-pading8 top2">
+				<h1>Rajasthan</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="rajasthan" class="btn2" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.justahotels.com/wp-content/uploads/2023/07/Manali-Travel-Guide.jpg" alt="Manali Image">
+			</div>
+			<div class="name-text name-pading9 top3">
+				<h1>Manali</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="manali" class="btn3" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://storage.googleapis.com/thrilleasy-prod-web/images%2F1003%2F1003_img_ecebdaa2-ccbf-4bdd-8f42-5bb0c0f8adac.jpg?generation=1638025480063010&alt=media" alt="Srinagar Image">
+				
+			</div>
+			<div class="name-text name-pading10 top3">
+				<h1>Srinagar</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="srinagar" class="btn4" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.incredibleindia.gov.in/content/dam/incredible-india/images/trips/punjab/amritsar/6-days-trip/golden-temple-amritsar-punjab-tri-iter-day1.jpg" alt="Amritsar Image">
+			</div>
+			<div class="name-text name-pading11 top3">
+				<h1>Amritsar</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="amritsar" class="btn4" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWHI84uiFZQ8EY03ZE-PIQ5iBS9TdrWQDLg&s" alt="Jog Falls Image">
+			</div>
+			<div class="name-text name-pading12 top3">
+				<h1>Jog Falls</h1>
+				<form method="POST" action="tourism_info.php">
+					<input type="submit" name="jogfalls" class="btn2" value="Visit">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

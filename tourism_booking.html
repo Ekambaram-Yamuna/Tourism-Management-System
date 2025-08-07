@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Form</title>
+	<link rel="stylesheet" type="text/css" href="tourism_booking.css">
+	<script>
+		function validateForm() {
+			if (isEmpty(document.getElementById('data_3').value.trim())) {
+				alert('First name is required!');
+				return false;
+			}
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+				alert('Last name is required!');
+				return false;
+			}
+			if (!validateEmail(document.getElementById('data_5').value.trim())) {
+				alert('Email must be a valid email address!');
+				return false;
+			}
+			return true;
+		}
+		function isEmpty(str) { return (str.length == 0 || !str.trim()); }
+		function validateEmail(email) {
+			var re = "";
+			return isEmpty(email) || re.test(email);
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<ul>
+			<ul class="list">
+			<li class="logo"><a href="tourism_mainPage.html"><img src="https://png.pngtree.com/png-clipart/20220228/original/pngtree-pin-location-with-3d-earth-globe-png-image_7326089.png" alt="Logo" style="width:36px;height:36px"></a></li>
+			<div class="search">
+                <form method="POST" action="tourism_info.php">
+                  <input type="text" name="search_p" placeholder="Search..." size="50">
+              
+                  <input type="image" name="submit_p" src="https://img.icons8.com/?size=100&id=W0xu6u7K9A0F&format=png&color=000000" width="22px" height="22px" alt="Search image" style="margin-left: 35px;">
+                </form>
+            </div>
+			</ul>
+			<ul class="list2">
+			<li><a href="tourism_mainPage.html">Home</a></li>
+			<li><a id="long" href="tourism_destination.html">Destination</a></li>
+			<li><a href="tourism_gallery.html">Gallery</a></li>
+			<li><a href="tourism_feedback.html">Feedback</a></li>
+			<li><a href="tourism_signin _index.html">Logout</a></li>
+			</ul>
+		</ul>
+	</div>
+	<h1>Tour Booking</h1>
+	<div class="container">
+		<form method="POST" action="tourism_booking.php" name="form" onsubmit="return validateForm()">
+			<div class="textbox">
+				<input type="text" placeholder="First Name" name="ffirst" value=""  onkeypress="return /[a-zA-Z]/i.test(event.key)" required>  
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Last Name" name="flast" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required> 
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Email" name="femail" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="City" name="city" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Phone" name="fphone" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){10,}" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Destination" name="fdesti" value="" required>
+			</div>
+			<div class="btn">
+				<input name="submit" value="Submit" type="submit">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
